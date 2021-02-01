@@ -1,10 +1,9 @@
 /*
 Theme Name: montheme
 */
-html {
-    font-size: 62.5%;
-}
 
 @import "sass/var";
-@import "sass/nav";
+@import "sass/html";
+@import "sass/accueil";
+@import "sass/fonts";
 
