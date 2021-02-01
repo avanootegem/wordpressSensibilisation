@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: montheme
 */
@@ -5,18 +6,24 @@ html {
   font-size: 62.5%;
   background-color: #d2d2d2;
   font-family: "montserrat_medium";
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 #accueil {
   position: relative;
-  height: 80vh;
+  height: 100vh;
 }
 
 #accueil #nav-bar {
   position: relative;
   width: 100vw;
   height: 10vh;
-  background-color: #50146d;
+  background-color: #50146e;
   color: #d2d2d2;
 }
 
@@ -55,7 +62,7 @@ html {
 
 #accueil #block-intro {
   position: absolute;
-  width: 70vw;
+  width: 80vw;
   height: 30vh;
   top: 50%;
   left: 50%;
@@ -65,7 +72,7 @@ html {
 
 #accueil #block-intro #text-intro {
   position: absolute;
-  width: 60vw;
+  width: 70vw;
   height: auto;
   top: 50%;
   left: 50%;
@@ -73,6 +80,39 @@ html {
           transform: translate(-50%, -50%);
   font-size: 2.5rem;
   text-align: center;
+}
+
+#difficultés {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+}
+
+#difficultés #block-difficultés {
+  position: absolute;
+  width: 65vw;
+  height: auto;
+  right: 5vw;
+  top: 5vh;
+  text-align: right;
+}
+
+#difficultés #block-difficultés #titre-difficultés {
+  font-size: 4rem;
+  color: #50146e;
+  font-family: "montserrat_bold";
+  padding-bottom: 3vw;
+}
+
+#difficultés #block-difficultés #text-difficultés {
+  font-size: 2rem;
+  font-family: "montserrat-regular";
+  text-align: end;
+}
+
+#difficultés #block-difficultés #text-difficultés p {
+  padding-bottom: 2rem;
 }
 
 @font-face {
@@ -83,5 +123,10 @@ html {
 @font-face {
   font-family: "montserrat_medium";
   src: url("fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: "montserrat_bold";
+  src: url("fonts/Montserrat-Bold.ttf");
 }
 /*# sourceMappingURL=style.css.map */

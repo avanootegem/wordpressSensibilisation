@@ -1,13 +1,13 @@
 #accueil {
     position: relative;
-    height: 80vh;
+    height: 100vh;
 
     #nav-bar {
         position: relative;
         width: 100vw;
         height: 10vh;
 
-        background-color: rgb(80, 20, 109);
+        background-color: $main_purple;
         color: $main_white;
 
         #titre-nav {
@@ -48,7 +48,7 @@
     #block-intro {
         position: absolute;
         
-        width : 70vw;
+        width : 80vw;
         height: 30vh;
 
         top: 50%;
@@ -59,7 +59,7 @@
         #text-intro {
             position: absolute;
 
-            width: 60vw;
+            width: 70vw;
             height: auto;
 
             top: 50%;

@@ -1,0 +1,37 @@
+#difficultés {
+    position: relative;
+
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+
+    #block-difficultés {
+        position: absolute;
+
+        width: 65vw;
+        height: auto;
+
+        right: 5vw;
+        top: 5vh;
+
+        text-align: right;
+
+        #titre-difficultés {
+            font-size: 4rem;
+            color: $main_purple;
+            font-family: "montserrat_bold";
+
+            padding-bottom: 3vw;
+        }
+
+        #text-difficultés {
+            font-size: 2rem;
+            font-family: "montserrat-regular";
+            text-align: end;
+
+            p {
+                padding-bottom: 2rem;
+            }
+        }
+    }
+}
