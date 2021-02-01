@@ -1,0 +1,44 @@
+#accueil {
+    #nav-bar {
+        position: relative;
+        width: 100vw;
+        height: 10vh;
+
+        background-color: rgb(80, 20, 109);
+        color: $main_white;
+
+        #titre-nav {
+            display: inline-block;
+            text-align: center;
+            position: absolute;
+        
+            width: 50vw;
+            height: auto;
+
+            top: 50%;
+            transform: translateY(-50%);
+
+            font-size: 3rem;
+        }
+        
+        #lien-nav {
+            display: inline-flex;
+            justify-content: space-around;
+            position: absolute;
+        
+            width: 25vw;
+            height: auto;
+            
+            right: 2vw;
+            top: 50%;
+            transform: translateY(-50%);
+        
+            font-size: 2rem;
+
+            a {
+                color: $main_white;
+                text-decoration: none;
+            }
+        }
+    }
+}
