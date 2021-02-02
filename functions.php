@@ -4,19 +4,19 @@ function pages($page) {
     $value = "";
     switch ($page) {
         case 1:
-            $value = "difficultés";
+            $value = "solutions";
         break;
         
         case 2:
-            $value = "accueil";
+            $value = "graphiques";
         break;
         
         case 3:
-            $value = "solutions";
+            $value = "difficultés";
         break;
 
         case 4:
-            $value = "graphiques";
+            $value = "accueil";
         break;
 
         default:
@@ -34,7 +34,7 @@ function montheme_support () {
 function montheme_register_assets() {
     wp_register_style('reset', get_template_directory_uri() . '/reset.css', array(), null, 'all');
     wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), null, 'all');
-    wp_register_script('order', get_template_directory_uri() . '/js/order.js', array(), null, 'all');
+    wp_register_script('order', get_template_directory_uri() . '/js/order.js', array(), '1.2', 'all');
     wp_enqueue_style('reset');
     wp_enqueue_style('html5blank');
     wp_enqueue_script('order');

@@ -94,7 +94,7 @@ html::-webkit-scrollbar {
   width: 65vw;
   height: auto;
   right: 5vw;
-  top: 5vh;
+  top: 10vh;
   text-align: right;
 }
 
@@ -113,6 +113,25 @@ html::-webkit-scrollbar {
 
 #difficultés #block-difficultés #text-difficultés p {
   padding-bottom: 2rem;
+}
+
+#graphiques {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#graphiques .graph {
+  display: inline-block;
+  position: relative;
+  width: 600px;
+  height: 300px;
+  top: 10vh;
+  border: solid blue 1px;
 }
 
 @font-face {
