@@ -1,0 +1,26 @@
+#footer {
+    width: 100vw;
+    height: 8vh;
+
+    background-color: $main_grey;
+
+    #footer-nav {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+
+        width: 50vw;
+        height: auto;
+
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        font-size: 1.5rem;
+
+        a {
+            color: $main_white;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,11 +1,13 @@
-#difficultés {
+#solutions {
     position: relative;
 
     width: 100vw;
     height: auto;
-    min-height: 50vh;
+    min-height: 40vh;
 
-    #block-difficultés {
+    margin-top: 10vh;
+
+    #block-solutions {
         position: relative;
 
         width: 65vw;
@@ -15,12 +17,12 @@
 
         text-align: right;
 
-        #titre-difficultés {
+        #titre-solutions {
             margin-bottom: 3vw;
             height: auto;
         }
 
-        #text-difficultés {
+        #text-solutions {
             font-size: 2rem;
             font-family: "montserrat-regular";
             text-align: end;
