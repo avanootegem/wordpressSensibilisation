@@ -24,3 +24,11 @@
         }
     }
 }
+
+@media screen and (max-width: 800px) {
+    #footer {
+        #footer-nav {
+            width: 90vw;
+        }
+    }
+}

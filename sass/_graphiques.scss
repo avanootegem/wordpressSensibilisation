@@ -65,3 +65,20 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 800px) {
+    #graphiques {
+        #block-graph {
+            div {
+                .block-graph {
+                    width: 400px;
+                }
+            }
+        }
+    
+        #conclusion {
+            width: 90vw;
+            font-size: 1.5rem;
+        }
+    }
+}

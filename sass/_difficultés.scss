@@ -37,3 +37,34 @@
         }
     }
 }
+
+@media screen and (max-width: 800px) {
+    #difficultés {
+        #block-difficultés {
+            width: 90vw;
+            margin-left: 5vw;
+            text-align: left;
+    
+            #titre-difficultés {
+                margin-bottom: 3vw;
+                height: auto;
+            }
+    
+            #text-difficultés {
+                font-size: 2rem;
+                font-family: "montserrat-regular";
+                text-align: start;
+                height: auto;
+    
+                h4 {
+                    margin-bottom: 1rem;
+                }
+    
+                ul {
+                    display: block;
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+    }
+}

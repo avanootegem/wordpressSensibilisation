@@ -1,6 +1,6 @@
 #accueil {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
 
     #nav-bar {
         position: relative;
@@ -43,6 +43,11 @@
                 text-decoration: none;
             }
         }
+
+        #menu {
+            display: none;
+            cursor: pointer;
+        }
     }
 
     #block-intro {
@@ -75,6 +80,99 @@
             font-size: 3rem;
             font-weight: 700;
             text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #accueil {
+        #nav-bar {
+            position: relative;
+            width: 100vw;
+            height: 10vh;
+    
+            background-color: $main_purple;
+            color: $main_white;
+
+            & > div {
+                padding-top: 3vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 14vh;
+            }
+    
+            #title-and-menu {
+                width: 98vw;
+                height: 4vh;
+
+                & > div {
+                    display: flex;
+                    justify-content: space-around;
+                    position: absolute;
+                    
+                    width: 98vw;
+                }
+
+                #titre-nav {
+                    position: initial;
+                    width: 80vw;
+                    font-size: 3rem;
+                    transform: translate(0);
+                }
+
+                #menu {
+                    width: 5vw;
+                }
+            }
+            
+            #lien-nav {
+                display: none;
+                transform: translate(0);
+                height: 4vh;
+            }
+
+            #menu {
+                display: initial;
+            }
+
+            &.change {
+                height: 16vh;
+
+                #lien-nav {
+                    padding-top: 2vh;
+                    width: 100vw;
+                    display: flex;
+                }
+            }
+        }
+    
+        #block-intro {
+            position: absolute;
+            display: flex;
+            
+            width : 90vw;
+            height: 60vh;
+    
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    
+    
+            #text-intro {
+                width: 90vw;
+                height: auto;
+    
+                font-size: 2.5rem;
+                text-align: center;
+            }
+    
+            h3 {
+                color: $main_purple;
+                font-size: 3rem;
+                font-weight: 700;
+                text-align: center;
+            }
         }
     }
 }

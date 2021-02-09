@@ -17,3 +17,12 @@ global.appendChild(difficultés);
 global.appendChild(graphiques);
 global.appendChild(solutions);
 global.appendChild(footer);
+
+
+const nav = document.getElementById("nav-bar");
+const menu = document.getElementById("menu");
+menu.onclick = function() {
+    nav.classList.toggle("change");
+}
+
+console.log(menu);

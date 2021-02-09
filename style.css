@@ -28,7 +28,7 @@ h4 {
 
 #accueil {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #accueil #nav-bar {
@@ -72,6 +72,11 @@ h4 {
   text-decoration: none;
 }
 
+#accueil #nav-bar #menu {
+  display: none;
+  cursor: pointer;
+}
+
 #accueil #block-intro {
   position: absolute;
   width: 80vw;
@@ -99,6 +104,96 @@ h4 {
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  #accueil #nav-bar {
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    background-color: #50146e;
+    color: #d2d2d2;
+  }
+  #accueil #nav-bar > div {
+    padding-top: 3vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 14vh;
+  }
+  #accueil #nav-bar #title-and-menu {
+    width: 98vw;
+    height: 4vh;
+  }
+  #accueil #nav-bar #title-and-menu > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: absolute;
+    width: 98vw;
+  }
+  #accueil #nav-bar #title-and-menu #titre-nav {
+    position: initial;
+    width: 80vw;
+    font-size: 3rem;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  #accueil #nav-bar #title-and-menu #menu {
+    width: 5vw;
+  }
+  #accueil #nav-bar #lien-nav {
+    display: none;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    height: 4vh;
+  }
+  #accueil #nav-bar #menu {
+    display: initial;
+  }
+  #accueil #nav-bar.change {
+    height: 16vh;
+  }
+  #accueil #nav-bar.change #lien-nav {
+    padding-top: 2vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #accueil #block-intro {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90vw;
+    height: 60vh;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  #accueil #block-intro #text-intro {
+    width: 90vw;
+    height: auto;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  #accueil #block-intro h3 {
+    color: #50146e;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+  }
 }
 
 #difficultés {
@@ -135,6 +230,31 @@ h4 {
 #difficultés #block-difficultés #text-difficultés ul {
   display: block;
   margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 800px) {
+  #difficultés #block-difficultés {
+    width: 90vw;
+    margin-left: 5vw;
+    text-align: left;
+  }
+  #difficultés #block-difficultés #titre-difficultés {
+    margin-bottom: 3vw;
+    height: auto;
+  }
+  #difficultés #block-difficultés #text-difficultés {
+    font-size: 2rem;
+    font-family: "montserrat-regular";
+    text-align: start;
+    height: auto;
+  }
+  #difficultés #block-difficultés #text-difficultés h4 {
+    margin-bottom: 1rem;
+  }
+  #difficultés #block-difficultés #text-difficultés ul {
+    display: block;
+    margin-bottom: 3rem;
+  }
 }
 
 #graphiques {
@@ -208,6 +328,16 @@ h4 {
   text-align: center;
 }
 
+@media screen and (max-width: 800px) {
+  #graphiques #block-graph div .block-graph {
+    width: 400px;
+  }
+  #graphiques #conclusion {
+    width: 90vw;
+    font-size: 1.5rem;
+  }
+}
+
 #footer {
   width: 100vw;
   height: 8vh;
@@ -233,6 +363,12 @@ h4 {
 #footer #footer-nav a {
   color: #d2d2d2;
   text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  #footer #footer-nav {
+    width: 90vw;
+  }
 }
 
 #solutions {
@@ -270,6 +406,31 @@ h4 {
 #solutions #block-solutions #text-solutions ul {
   display: block;
   margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 800px) {
+  #solutions #block-solutions {
+    width: 90vw;
+    margin-left: 5vw;
+    text-align: left;
+  }
+  #solutions #block-solutions #titre-solutions {
+    margin-bottom: 3vw;
+    height: auto;
+  }
+  #solutions #block-solutions #text-solutions {
+    font-size: 2rem;
+    font-family: "montserrat-regular";
+    text-align: start;
+    height: auto;
+  }
+  #solutions #block-solutions #text-solutions h4 {
+    margin-bottom: 1rem;
+  }
+  #solutions #block-solutions #text-solutions ul {
+    display: block;
+    margin-bottom: 3rem;
+  }
 }
 
 @font-face {
