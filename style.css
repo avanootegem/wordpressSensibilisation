@@ -14,6 +14,10 @@ html::-webkit-scrollbar {
   display: none;
 }
 
+h1 {
+  font-family: "montserrat_bold";
+}
+
 h2 {
   color: #50146e;
   font-size: 5rem;
